@@ -23,9 +23,10 @@ export async function capturesHandler(
       return {
         name: item,
         height: response.height,
-        weight: response.height,
+        weight: response.weight,
         picture: response.sprites.front_default,
         types: response.types,
+        id: response.id,
       } as PokemonProperties
     })
   )

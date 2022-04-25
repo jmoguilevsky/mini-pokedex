@@ -6,6 +6,7 @@ import type {
   IBaseComponent,
   IMetricsComponent,
 } from "@well-known-components/interfaces"
+import { PokemonsComponent } from "./logic/pokemons"
 import { metricDeclarations } from "./metrics"
 
 export type GlobalContext = {
@@ -19,6 +20,7 @@ export type BaseComponents = {
   server: IHttpServerComponent<GlobalContext>
   fetch: IFetchComponent
   metrics: IMetricsComponent<keyof typeof metricDeclarations>
+  pokemons: PokemonsComponent
 }
 
 // components used in runtime
